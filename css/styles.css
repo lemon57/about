@@ -197,16 +197,16 @@ img {
   /*opacity: 0.8;*/
 }
 .card__image--river {
-  background-image: url(/portfolio/img/blog-ror.jpg);
+  background-image: url(img/blog-ror.jpg);
   /*opacity: 0.8;*/
 }
 .card__image--record {
-  background-image: url(/portfolio/img/ddiy.jpg);
+  background-image: url(img/ddiy.jpg);
   /*opacity: 0.8;*/
 }
 .card__image--fence {
   /*background-image: url(https://unsplash.it/800/600?image=59);*/
-  background-image: url(/portfolio/img/lemonchat01.png);
+  background-image: url(img/lemonchat01.png);
   /*opacity: 0.8;*/
 }
 .card__title {
