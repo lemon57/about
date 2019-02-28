@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="navbar" class="navbar sticky">
+  <div class="floatleft">
+    <a class="lemon" href="#welcome-section">
+    <span style="font-size: 3em; color: #E0FCA3; ">
+    <i class="fas fa-lemon"></i></a></span>
+  </div>
+  <div class="floatright">
+    <a href="#welcome-section">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <span style="font-size: 1.5em;">
+      <i class="fa fa-bars"></i></span>
+    </a>
+  </div>
+</div>
+  <div id="welcome-section" class="intro">
+    <h1>Hey I'am Roman.</h1>
+    <p> &#123;a full stack developer&#125;</p>
+  </div>
+<div id="skills" class="skills">
+  <div class="headers">
+    <h2>My skills</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h3>Creating MVC</h3>
+        <div class="cl_text_img">
+          <p>
+            Always inspired by developing a new project architecture. Design the project's wireframe & mockup, test UX with a prototype, recreate user stories in the project.
+            I like mastering and using modern frameworks like Ruby on Rails and i'm inspired the possibilities of framework Ruby on Rails.
+          </p>
+          <span style="font-size: 5em; color: Gray;">
+            <i class="fas fa-gem"></i>
+          </span>
+        </div>
+    </div>
+    <div class="column">
+      <h3>Modern&Usable</h3>
+        <div class="cl_text_img">
+          <p>Using the latest technology and the most suitable modern approach while
+            maintaining compatibility. Explore a variety of technologies and choose the ones that best fit to the current project.
+          </p>
+          <span style="font-size: 5em; color: Gray;">
+            <i class="fas fa-project-diagram"></i>
+          </span>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h3>Responsive</h3>
+        <div class="cl_text_img">
+          <p>
+            I try to make my projects work properly on any device; from the smallest mobile to the largest desktop setup.
+          </p>
+          <span style="font-size: 5em; color: Gray;">
+            <i class="fas fa-laptop"></i>
+          </span>
+        </div>
+    </div>
+    <div class="column">
+      <h3>Technology</h3>
+        <div class="cl_text_img">
+          <p>
+            Ruby on Rails, SQL, HTML5 CSS3, JavaScript ES6, GutHub, Sublime Text <br>
+            Ruby, CSS grid/flexbox, Bootstrap, jQuery, Git
+          </p>
+          <span style="font-size: 5em; color: Gray;">
+            <i class="fas fa-cubes"></i>
+          </span>
+        </div>
+    </div>
+  </div>
+ </div>
+
+<div id="projects" class="projects">
+  <div class="headers">
+    <h2 class="work-header">These are some of my projects </h2>
+    <h3>Independent projects</h3>
+  </div>
+  <ul class="cards">
+   <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--fence">
+      </div>
+
+      <div class="card__content">
+        <div class="stack-pics">
+         <img src="img/ruby-on-rails.png" alt="" style="width:50px;">
+         <img src="img/css-js-html.png" alt="" style="width: 110px;">
+        </div>
+        <div class="card__title">Lemon chat on Heroku</div>
+        <p class="card__text"><a href="https://lemonschat.herokuapp.com/">LemonsChat</a> application with minimal authentication and ActionCable. Different approach to build front-end on Ruby on Rails. Stack: Rails, JavaScript and CSS. Without Asset Pipeline, Sprockets, CoffeeScript and Sass. Using instructions from <a href="https://evilmartians.com">Evilmartians</a> </p>
+        <!-- <button class="btn btn--block card__btn">Button</button> -->
+      </div>
+    </div>
+   </li>
+   <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--river"></div>
+      <div class="card__content">
+        <div class="stack-pics">
+         <img src="img/ruby-on-rails.png" alt="Ruby on Rails" style="width:50px;">
+         <img src="img/bootstrap-stack.png" alt="Bootstrap" style="width: 50px;">
+        </div>
+        <div class="card__title">Blog Ruby on Rails</div>
+        <p class="card__text">Blog with Ruby on Rails based on Udemy the complete Ruby on Rails developer course. Blog functionality: CRUD artilces, view with pagination, create, signin up, validations and authentication users. </p>
+        <!-- <button class="btn btn--block card__btn">Button</button> -->
+      </div>
+    </div>
+   </li>
+   <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--record"></div>
+      <div class="card__content">
+        <div class="stack-pics">
+         <img src="img/ruby-on-rails.png" alt="Ruby on Rails" style="width:50px;">
+         <img src="img/bootstrap-stack.png" alt="Bootstrap" style="width: 50px;">
+        </div>
+        <div class="card__title">DDIY</div>
+        <p class="card__text">Don’t do it yourself - <a href="http://www.ddiy.tech"> D D I Y </a>. Platform which connects householders with handymen. The service that allow to find the best tradesman (handyman) and for acceptable money for solving problem in customer’s house.</p>
+        <!-- <button class="btn btn--block card__btn">Button</button> -->
+      </div>
+    </div>
+   </li>
+  </ul>
+</div>
+
+  <div id="contact" class="contact">
+    <div class="contact-header">
+      Сontact me through
+    </div>
+    <div class="contact-links">
+     <span class="socsize">
+      <a href="https://www.facebook.com/roman.kislov.35" target="_blank" class="contact-details">
+        <i class="fab fa-facebook-f"></i></a>
+     </span>
+     <span class="socsize">
+      <a href="https://www.instagram.com/zeek57" target="_blank" class="contact-details">
+        <i class="fab fa-instagram"></i>
+      </a>
+     </span>
+     <span class="socsize">
+      <a href="https://github.com/lemon57" target="_blank" class="contact-details">
+        <i class="fab fa-github-alt"></i>
+      </a>
+     </span>
+     <span class="socsize">
+      <a href="mailto: gzeek57@gmail.com" target="_blank" class="contact-details">
+        <i class="far fa-envelope"></i>
+      </a>
+     </span>
+    </div>
+  </div>
+  <footer>
+    <p>"Truth can only be found in one place: the code."</p>
+    Robert C. Martin
+  <p>© Created by Roman Lemon</a></p>
+  </footer>
+</body>
+</html>

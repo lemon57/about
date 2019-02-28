@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    /*padding:0;*/
+    /*padding: 0;*/
+    font-family: 'Roboto Mono', monospace;
+    /*box-sizing: border-box;*/
+}
+
+/* navbar section */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  opacity: 0.8;
+  /*position: fixed;*/
+}
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  text-align: center; /* If you want the text to be centered */
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+.floatright a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.floatleft {
+    float:left;
+    padding-left: 40px;
+}
+.floatright {
+    float:right;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+/* center headers */
+.headers, .contact {
+  text-align: center;
+}
+
+/* intro section */
+.intro {
+    top: 0;
+    background: #F5FAFF;
+    min-height: 100vh;
+    padding-top: 45vh;
+    text-align: center;
+    color: #5C584D;
+}
+
+/* skills sections */
+.row {
+  content: "";
+  display: flex;
+  clear: both;
+  margin-bottom: 15px;
+}
+.column {
+  /*float: left;*/
+  width: 48%;
+  padding: 10px;
+  overflow: auto;
+  border: 2px solid #5D584D;
+  margin: 20px;
+  display: table-cell;
+}
+.skills {
+  margin-top: 30px;
+  padding: 80px 30px;
+  overflow: auto;
+}
+.cl_text_img {
+  display: flex;
+}
+
+/* projects sections*/
+
+.project {
+    display: inline-block;
+    margin: 40px 80px;
+}
+.project-title {
+  text-align: center;
+}
+#projects, #skills h2 {
+  padding-top: 90px;
+  color: #5C584D;
+  padding-bottom: 30px;
+}
+#projects h3 {
+  padding-top: 15px;
+  color: #5C584D;
+}
+.project-pic {
+    width: 1fr;
+    height: 180px;
+    border-bottom: 2px solid lightblue;
+}
+
+/*start class for card */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  /*padding: 1rem;*/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image{
+ /* -webkit-filter: contrast(100%);
+          filter: contrast(100%);*/
+  opacity: 1;
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  opacity: 0.5;
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+  /*opacity: 0.8;*/
+}
+.card__image--river {
+  background-image: url(/portfolio/img/blog-ror.jpg);
+  /*opacity: 0.8;*/
+}
+.card__image--record {
+  background-image: url(/portfolio/img/ddiy.jpg);
+  /*opacity: 0.8;*/
+}
+.card__image--fence {
+  /*background-image: url(https://unsplash.it/800/600?image=59);*/
+  background-image: url(/portfolio/img/lemonchat01.png);
+  /*opacity: 0.8;*/
+}
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+/*end class for card */
+
+/* contact section */
+.contact-header {
+  padding: 100px 0 100px;
+  font-size: 34px;
+}
+.contact-details {
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 45px;
+  margin-top: 25px;
+}
+.contact-links {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+/* responsive section */
+@media (max-width: 600px) {
+ .project {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+ }
+/* nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }*/
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .floatright a:not(:last-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: fixed;}
+  .navbar.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .column {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+  }
+  .row {
+    display: block;
+  }
+}
+
+.socsize {
+  font-size: 5em;
+  color: Gray;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-details {
+    margin: 0px;
+  }
+  .socsize {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 830px) {
+  .contact-details {
+    margin: 20px;
+  }
+}
+
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #C29926;
+}
+
+
